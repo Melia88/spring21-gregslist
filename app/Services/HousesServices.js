@@ -12,8 +12,10 @@ class HousesService{
   ProxyState.houses = ProxyState.houses
  }
 
- moreInfo(id){
-  ProxyState.houses = ProxyState.houses.filter(house => house.id != id)
+ bid(id){
+  let house = ProxyState.houses.find(house => house.id === id)
+  // make the change
+  house.price += 100
  }
 
 }

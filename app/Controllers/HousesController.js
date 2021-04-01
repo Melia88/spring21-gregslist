@@ -48,8 +48,8 @@ export default class HousesController{
   deleteHouse(id){
     housesService.deleteHouse(id)
   }
-  moreInfo(id){
-    housesService.moreInfo(id)
+  bid(id){
+    housesService.bid(id)
   }
 }
 
